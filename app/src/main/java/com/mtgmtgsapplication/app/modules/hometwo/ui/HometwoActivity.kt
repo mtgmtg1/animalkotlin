@@ -21,13 +21,13 @@ import kotlin.Unit
 class HometwoActivity : BaseActivity<ActivityHometwoBinding>(R.layout.activity_hometwo) {
   private val viewModel: HometwoVM by viewModels<HometwoVM>()
 
-  private val REQUEST_CODE_RESERVATION_ACTIVITY: Int = 694
+  private val REQUEST_CODE_RESERVATION_ACTIVITY: Int = 559
 
 
-  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 485
+  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 899
 
 
-  private val REQUEST_CODE_MY_ACTIVITY: Int = 759
+  private val REQUEST_CODE_MY_ACTIVITY: Int = 747
 
 
   override fun onInitialized(): Unit {

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderdecorationfourModel" type="com.mtgmtgsapplication.app.modules.home.data.model.ImageSliderSliderdecorationfourModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameBanner"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyledeep_orange_300cornerRadius">
+        <View
+            android:background="@drawable/rectangle_bg_deep_orange_301_radius_46"
+            android:id="@+id/viewDecorationFour"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_86pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_8pxh" android:layout_width="@dimen/_92pxh"/>
+        <FrameLayout android:id="@+id/frameStackdecorationthree"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_132pxv"
+            android:layout_marginEnd="@dimen/_71pxh"
+            android:layout_marginStart="@dimen/_71pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_132pxh">
+            <ImageView android:id="@+id/imageDecorationThree"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_132pxh"
+                android:layout_width="@dimen/_132pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_decoration3"
+                imageUrl="@{imageSliderSliderdecorationfourModel.imageDecorationThree}"
+                placeHolder="@{@drawable/img_decoration3}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_decoration3"/>
+            <View
+                android:background="@drawable/rectangle_bg_deep_orange_302_radius_20"
+                android:id="@+id/viewDecorationTwo"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_40pxh"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/imageDecorationOne"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_83pxh"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_18pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_decoration1"
+            imageUrl="@{imageSliderSliderdecorationfourModel.imageDecorationOne}"
+            placeHolder="@{@drawable/img_decoration1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_decoration1"/>
+        <ImageView android:id="@+id/imageSixHundredFiftyOne"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_137pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_131pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_12pxh}"
+            imageUrl="@{imageSliderSliderdecorationfourModel.imageSixHundredFiftyOne}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_651"/>
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtText" android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_36pxv"
+            android:layout_marginEnd="@dimen/_21pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_36pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{imageSliderSliderdecorationfourModel.txtText}"
+            style="@style/txtNotoSansKRnotosanskrbold28" tools:text="@string/lbl23"/>
+        <TextView android:gravity="top|start" android:id="@+id/txtTen"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_76pxv"
+            android:layout_marginEnd="@dimen/_21pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_76pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_9pxh"
+            android:text="@{imageSliderSliderdecorationfourModel.txtTen}"
+            style="@style/txtNotoSansKRnotosanskrregular11" tools:text="@string/msg9"/>
+    </FrameLayout>
+</layout>

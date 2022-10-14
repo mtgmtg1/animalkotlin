@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="lists1RowModel" type="com.mtgmtgsapplication.app.modules.reservationtwo.data.model.Lists1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumns"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:gravity="end"
+            android:id="@+id/txtS" android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3pxh"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtS}"
+            style="@style/txtMulishsemibold12" tools:text="@string/lbl_s"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTwentySeven"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtTwentySeven}"
+            style="@style/txtMulishregular12" tools:text="@string/lbl_272"/>
+        <TextView android:ellipsize="end" android:gravity="end"
+            android:id="@+id/txtThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3pxh"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtThree}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_32"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTen"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtTen}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_102"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSeventeen"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtSeventeen}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_172"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTwentyFour"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtTwentyFour}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_242"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtThirtyOne"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{lists1RowModel.txtThirtyOne}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_312"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="jointhreeVM" type="com.mtgmtgsapplication.app.modules.jointhree.data.viewmodel.JointhreeVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearJoinThree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearStatusBar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageTime"
+                android:layout_height="@dimen/_11pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_38pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_time"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_time"/>
+            <ImageView android:id="@+id/imageCar"
+                android:layout_height="@dimen/_11pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_225pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_67pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_car"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_car"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumntitle"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700_cccornerRadius">
+            <TextView android:id="@+id/txtTitle"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_45pxh"
+                android:layout_marginTop="@dimen/_88pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:text="@{jointhreeVM.jointhreeModel.txtTitle}"
+                style="@style/txtNotoSansKRnotosanskrmedium28" tools:text="@string/lbl12"/>
+            <View android:background="@color/black_900_33"
+                android:id="@+id/lineVectorForty"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_49pxv" android:layout_width="@dimen/_250pxh"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl13"
+                android:id="@+id/textInputLaySeven"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_weight="0.23" android:layout_width="0dp"
+                android:textColorHint="@color/black_900" style="@style/txtSolidRoundedOutline_2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/noto_sans_kr"
+                    android:id="@+id/etSeven" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@={jointhreeVM.jointhreeModel.etSevenValue}"
+                    android:textColor="@color/black_900_59"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14pxh"
+                    android:textStyle="bold" tools:text="@string/lbl13"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700_border_black_900_33_radius_7"
+                android:ellipsize="end" android:hint="@string/lbl14"
+                android:id="@+id/etGroupTwentyNine"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_16pxv"
+                android:singleLine="true"
+                android:text="@={jointhreeVM.jointhreeModel.etGroupTwentyNineValue}"
+                android:textColorHint="@color/black_900_59"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl15"
+                android:id="@+id/textInputLayEight"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_weight="0.42" android:layout_width="0dp"
+                android:textColorHint="@color/black_900" style="@style/txtSolidRoundedOutline_2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/noto_sans_kr"
+                    android:id="@+id/etEight" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@={jointhreeVM.jointhreeModel.etEightValue}"
+                    android:textColor="@color/black_900_59"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14pxh"
+                    android:textStyle="bold" tools:text="@string/lbl15"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl17"
+                android:id="@+id/textInputLayNine"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_weight="0.86" android:layout_width="0dp"
+                android:textColorHint="@color/black_900" style="@style/txtSolidRoundedOutline_2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/noto_sans_kr"
+                    android:id="@+id/etNine" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@={jointhreeVM.jointhreeModel.etNineValue}"
+                    android:textColor="@color/black_900_59"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14pxh"
+                    android:textStyle="bold" tools:text="@string/lbl16"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btn"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true" android:text="@string/lbl18"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl18"/>
+            <View android:background="@color/black_900_33"
+                android:id="@+id/lineVectorFortyOne"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_250pxh"/>
+            <FrameLayout android:id="@+id/frameStackshadow"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_64pxv"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_93pxv" android:layout_width="@dimen/_220pxh">
+                <ImageView android:id="@+id/imageShadow"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_32pxv"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_shadow"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btn1"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl11"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl11"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

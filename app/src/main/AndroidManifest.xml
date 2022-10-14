@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.mtgmtgsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.mtgmtgsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.mtgmtgsapplication.app.modules.reservation.ui.ReservationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.joinfour.ui.JoinfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.hometwo.ui.HometwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.join.ui.JoinActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.chat.ui.ChatActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.reservationtwo.ui.ReservationtwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.my.ui.MyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.jointwo.ui.JointwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.jointhree.ui.JointhreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtgmtgsapplication.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

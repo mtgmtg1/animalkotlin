@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listf1RowModel" type="com.mtgmtgsapplication.app.modules.reservationtwo.data.model.Listf1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnf"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:id="@+id/txtF"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listf1RowModel.txtF}"
+            style="@style/txtMulishsemibold12" tools:text="@string/lbl_f"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listf1RowModel.txtOne}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_1"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtEight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listf1RowModel.txtEight}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_82"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtFifteen"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listf1RowModel.txtFifteen}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_152"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTwentyTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listf1RowModel.txtTwentyTwo}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_222"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTwentyNineOne"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listf1RowModel.txtTwentyNineOne}"
+            style="@style/txtMulishregular12_1" tools:text="@string/lbl_292"/>
+    </LinearLayout>
+</layout>

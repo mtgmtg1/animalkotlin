@@ -22,13 +22,13 @@ class ReservationActivity : BaseActivity<ActivityReservationBinding>(R.layout.ac
     {
   private val viewModel: ReservationVM by viewModels<ReservationVM>()
 
-  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 641
+  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 722
 
 
-  private val REQUEST_CODE_MY_ACTIVITY: Int = 788
+  private val REQUEST_CODE_MY_ACTIVITY: Int = 590
 
 
-  private val REQUEST_CODE_HOME_ACTIVITY: Int = 820
+  private val REQUEST_CODE_HOME_ACTIVITY: Int = 509
 
 
   override fun onInitialized(): Unit {

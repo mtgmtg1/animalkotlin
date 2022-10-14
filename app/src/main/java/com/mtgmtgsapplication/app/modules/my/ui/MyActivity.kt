@@ -19,16 +19,16 @@ import kotlin.Unit
 class MyActivity : BaseActivity<ActivityMyBinding>(R.layout.activity_my) {
   private val viewModel: MyVM by viewModels<MyVM>()
 
-  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 105
+  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 413
 
 
-  private val REQUEST_CODE_HOME_ACTIVITY: Int = 567
+  private val REQUEST_CODE_HOME_ACTIVITY: Int = 968
 
 
-  private val REQUEST_CODE_RESERVATION_ACTIVITY: Int = 882
+  private val REQUEST_CODE_RESERVATION_ACTIVITY: Int = 797
 
 
-  private val REQUEST_CODE_RESERVATIONTWO_ACTIVITY: Int = 680
+  private val REQUEST_CODE_RESERVATIONTWO_ACTIVITY: Int = 323
 
 
   override fun onInitialized(): Unit {

@@ -16,7 +16,7 @@ import kotlin.Unit
 class JoinfourActivity : BaseActivity<ActivityJoinfourBinding>(R.layout.activity_joinfour) {
   private val viewModel: JoinfourVM by viewModels<JoinfourVM>()
 
-  private val REQUEST_CODE_HOME_ACTIVITY: Int = 692
+  private val REQUEST_CODE_HOME_ACTIVITY: Int = 827
 
 
   override fun onInitialized(): Unit {

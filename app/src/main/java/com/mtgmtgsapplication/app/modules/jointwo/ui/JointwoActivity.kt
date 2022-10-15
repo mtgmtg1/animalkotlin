@@ -16,7 +16,7 @@ import kotlin.Unit
 class JointwoActivity : BaseActivity<ActivityJointwoBinding>(R.layout.activity_jointwo) {
   private val viewModel: JointwoVM by viewModels<JointwoVM>()
 
-  private val REQUEST_CODE_JOINTHREE_ACTIVITY: Int = 712
+  private val REQUEST_CODE_JOINTHREE_ACTIVITY: Int = 620
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")

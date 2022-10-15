@@ -16,7 +16,7 @@ import kotlin.Unit
 class ChatActivity : BaseActivity<ActivityChatBinding>(R.layout.activity_chat) {
   private val viewModel: ChatVM by viewModels<ChatVM>()
 
-  private val REQUEST_CODE_MY_ACTIVITY: Int = 386
+  private val REQUEST_CODE_MY_ACTIVITY: Int = 774
 
 
   override fun onInitialized(): Unit {

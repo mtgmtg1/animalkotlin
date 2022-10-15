@@ -16,7 +16,7 @@ import kotlin.Unit
 class JoinActivity : BaseActivity<ActivityJoinBinding>(R.layout.activity_join) {
   private val viewModel: JoinVM by viewModels<JoinVM>()
 
-  private val REQUEST_CODE_JOINTWO_ACTIVITY: Int = 252
+  private val REQUEST_CODE_JOINTWO_ACTIVITY: Int = 259
 
 
   override fun onInitialized(): Unit {

@@ -16,7 +16,7 @@ import kotlin.Unit
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
   private val viewModel: LoginVM by viewModels<LoginVM>()
 
-  private val REQUEST_CODE_JOIN_ACTIVITY: Int = 138
+  private val REQUEST_CODE_JOIN_ACTIVITY: Int = 381
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")

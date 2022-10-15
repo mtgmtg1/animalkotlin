@@ -35,13 +35,13 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home) {
 
   private val viewModel: HomeVM by viewModels<HomeVM>()
 
-  private val REQUEST_CODE_HOMETWO_ACTIVITY: Int = 788
+  private val REQUEST_CODE_HOMETWO_ACTIVITY: Int = 348
 
-  private val REQUEST_CODE_MY_ACTIVITY: Int = 947
+  private val REQUEST_CODE_MY_ACTIVITY: Int = 711
 
-  private val REQUEST_CODE_RESERVATION_ACTIVITY: Int = 532
+  private val REQUEST_CODE_RESERVATION_ACTIVITY: Int = 651
 
-  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 580
+  private val REQUEST_CODE_CHAT_ACTIVITY: Int = 178
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")

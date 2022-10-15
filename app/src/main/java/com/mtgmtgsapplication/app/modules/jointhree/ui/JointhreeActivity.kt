@@ -16,7 +16,7 @@ import kotlin.Unit
 class JointhreeActivity : BaseActivity<ActivityJointhreeBinding>(R.layout.activity_jointhree) {
   private val viewModel: JointhreeVM by viewModels<JointhreeVM>()
 
-  private val REQUEST_CODE_JOINFOUR_ACTIVITY: Int = 149
+  private val REQUEST_CODE_JOINFOUR_ACTIVITY: Int = 742
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")

@@ -29,48 +29,48 @@ class AppNavigationActivity :
   }
 
   override fun setUpClicks(): Unit {
-    binding.linearHomeTwo.setOnClickListener {
-      val destIntent = HometwoActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
-    binding.linearHome.setOnClickListener {
-      val destIntent = HomeActivity.getIntent(this, null)
+    binding.linearReservationTwo.setOnClickListener {
+      val destIntent = ReservationtwoActivity.getIntent(this, null)
       startActivity(destIntent)
     }
     binding.linearReservation.setOnClickListener {
       val destIntent = ReservationActivity.getIntent(this, null)
       startActivity(destIntent)
     }
+    binding.linearMy.setOnClickListener {
+      val destIntent = MyActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
+    binding.linearHomeTwo.setOnClickListener {
+      val destIntent = HometwoActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
     binding.linearJoinThree.setOnClickListener {
       val destIntent = JointhreeActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearChat.setOnClickListener {
-      val destIntent = ChatActivity.getIntent(this, null)
+    binding.linearHome.setOnClickListener {
+      val destIntent = HomeActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
+    binding.linearLogin.setOnClickListener {
+      val destIntent = LoginActivity.getIntent(this, null)
       startActivity(destIntent)
     }
     binding.linearJoinFour.setOnClickListener {
       val destIntent = JoinfourActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearReservationTwo.setOnClickListener {
-      val destIntent = ReservationtwoActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.linearJoin.setOnClickListener {
       val destIntent = JoinActivity.getIntent(this, null)
       startActivity(destIntent)
     }
+    binding.linearChat.setOnClickListener {
+      val destIntent = ChatActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
     binding.linearJoinTwo.setOnClickListener {
       val destIntent = JointwoActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
-    binding.linearMy.setOnClickListener {
-      val destIntent = MyActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
-    binding.linearLogin.setOnClickListener {
-      val destIntent = LoginActivity.getIntent(this, null)
       startActivity(destIntent)
     }
   }
